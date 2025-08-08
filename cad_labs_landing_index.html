@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CadLabs — Salesforce & AI Consulting</title>
+  <meta name="description" content="CadLabs helps teams ship faster with Salesforce customization, AI-assisted workflows, and data-driven delivery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    body { font-family: Inter, ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, "Apple Color Emoji", "Segoe UI Emoji"; }
+    .gradient { background: radial-gradient(1200px 600px at 10% -10%, rgba(59,130,246,.15), rgba(59,130,246,0)), radial-gradient(1200px 600px at 110% -30%, rgba(16,185,129,.15), rgba(16,185,129,0)); }
+  </style>
+</head>
+<body class="bg-white text-gray-900">
+  <!-- Nav -->
+  <header class="sticky top-0 z-40 backdrop-blur bg-white/70 border-b border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="flex h-16 items-center justify-between">
+        <a href="#" class="flex items-center gap-2">
+          <div class="h-9 w-9 rounded-2xl bg-black text-white grid place-items-center font-bold">CL</div>
+          <span class="font-semibold">CadLabs</span>
+        </a>
+        <nav class="hidden md:flex items-center gap-6 text-sm">
+          <a href="#services" class="hover:text-black text-gray-600">Services</a>
+          <a href="#work" class="hover:text-black text-gray-600">Work</a>
+          <a href="#process" class="hover:text-black text-gray-600">Process</a>
+          <a href="#about" class="hover:text-black text-gray-600">About</a>
+          <a href="#contact" class="inline-flex items-center rounded-xl border border-gray-300 px-3 py-1.5 hover:bg-gray-50">Contact</a>
+        </nav>
+        <button id="menuBtn" class="md:hidden inline-flex items-center justify-center rounded-xl border border-gray-300 p-2">
+          <span class="sr-only">Open menu</span>
+          <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M3.75 6.75h16.5M3.75 12h16.5m-16.5 5.25h16.5" />
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div id="mobileMenu" class="md:hidden hidden border-t border-gray-100 bg-white">
+      <div class="px-4 py-3 flex flex-col gap-3 text-sm">
+        <a href="#services" class="text-gray-700">Services</a>
+        <a href="#work" class="text-gray-700">Work</a>
+        <a href="#process" class="text-gray-700">Process</a>
+        <a href="#about" class="text-gray-700">About</a>
+        <a href="#contact" class="text-gray-700">Contact</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero -->
+  <section class="gradient relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20 sm:py-28">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 class="text-4xl sm:text-5xl font-extrabold tracking-tight leading-tight">Ship faster with <span class="text-black">Salesforce</span> & <span class="text-black">AI</span></h1>
+          <p class="mt-5 text-gray-600 text-lg">CadLabs designs, builds, and scales Salesforce solutions—enhanced with AI workflows and clean data—so your team can focus on growth, not grunt work.</p>
+          <div class="mt-8 flex flex-wrap gap-3">
+            <a href="#contact" class="inline-flex items-center rounded-2xl bg-black text-white px-5 py-3 font-medium shadow-sm hover:opacity-90">Start a project</a>
+            <a href="#services" class="inline-flex items-center rounded-2xl border border-gray-300 px-5 py-3 font-medium hover:bg-gray-50">See services</a>
+          </div>
+          <dl class="mt-10 grid grid-cols-3 gap-6 text-sm">
+            <div>
+              <dt class="text-gray-500">Avg. delivery</dt>
+              <dd class="font-semibold">2–6 weeks</dd>
+            </div>
+            <div>
+              <dt class="text-gray-500">Success rate</dt>
+              <dd class="font-semibold">100% demos on day 1</dd>
+            </div>
+            <div>
+              <dt class="text-gray-500">Timezone</dt>
+              <dd class="font-semibold">Global / IST</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="relative">
+          <div class="rounded-3xl border border-gray-200 p-2 shadow-sm bg-white">
+            <div class="rounded-2xl bg-gray-900 p-4 text-gray-200">
+              <div class="text-xs text-gray-400">cadlabs/setup.sh</div>
+              <pre class="mt-2 text-xs overflow-auto"><code># Spin up Salesforce + AI baseline
+- Discovery blueprint
+- Data model & security
+- API & real-time sync
+- LLM prompts & evals
+- Dashboards & KPIs
+
+&gt; ready in 10 days</code></pre>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Logos -->
+  <section class="py-10 border-y border-gray-100 bg-gray-50/50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <p class="text-center text-gray-500 text-sm">Trusted for CRM, integrations, and AI training data</p>
+      <div class="mt-6 grid grid-cols-2 sm:grid-cols-4 lg:grid-cols-6 gap-6 opacity-80">
+        <div class="h-10 bg-white border border-gray-200 rounded-xl"></div>
+        <div class="h-10 bg-white border border-gray-200 rounded-xl"></div>
+        <div class="h-10 bg-white border border-gray-200 rounded-xl"></div>
+        <div class="h-10 bg-white border border-gray-200 rounded-xl"></div>
+        <div class="h-10 bg-white border border-gray-200 rounded-xl"></div>
+        <div class="h-10 bg-white border border-gray-200 rounded-xl"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">What we do</h2>
+      <p class="mt-3 text-gray-600">End‑to‑end delivery: discovery, build, test, ship. Pick a lane or hand us the roadmap.</p>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="rounded-3xl border border-gray-200 p-6 hover:shadow-sm">
+          <h3 class="font-semibold">Salesforce Implementation</h3>
+          <p class="mt-2 text-sm text-gray-600">Sales, Service, and Platform builds with secure data models, flows, Apex, and scalable metadata.</p>
+        </div>
+        <div class="rounded-3xl border border-gray-200 p-6 hover:shadow-sm">
+          <h3 class="font-semibold">AI & Agent Workflows</h3>
+          <p class="mt-2 text-sm text-gray-600">Design prompts, evals, and guardrails. Automate triage, suggestions, and knowledge with measurable KPIs.</p>
+        </div>
+        <div class="rounded-3xl border border-gray-200 p-6 hover:shadow-sm">
+          <h3 class="font-semibold">Integrations & Data</h3>
+          <p class="mt-2 text-sm text-gray-600">REST/Platform events, ERP & MDM sync, real-time observability, and error handling that your QA will love.</p>
+        </div>
+        <div class="rounded-3xl border border-gray-200 p-6 hover:shadow-sm">
+          <h3 class="font-semibold">Omnichannel Service</h3>
+          <p class="mt-2 text-sm text-gray-600">Case automation, returns/refunds flows, portals, and analytics with SLAs baked in.</p>
+        </div>
+        <div class="rounded-3xl border border-gray-200 p-6 hover:shadow-sm">
+          <h3 class="font-semibold">Dashboards & Admin Tools</h3>
+          <p class="mt-2 text-sm text-gray-600">Forecasts, funnel health, adoption KPIs, API monitoring, and data quality scorecards.</p>
+        </div>
+        <div class="rounded-3xl border border-gray-200 p-6 hover:shadow-sm">
+          <h3 class="font-semibold">Delivery & Enablement</h3>
+          <p class="mt-2 text-sm text-gray-600">Playbooks, runbooks, and handover docs so your team can run fast after go‑live.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Work -->
+  <section id="work" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">Selected work</h2>
+      <div class="mt-10 grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <article class="rounded-3xl border border-gray-200 p-6 bg-white">
+          <h3 class="font-semibold">Inventory & Order Ops</h3>
+          <p class="mt-2 text-sm text-gray-600">Unified inventory + returns with real‑time ERP sync; reduced support handling time by 38%.</p>
+        </article>
+        <article class="rounded-3xl border border-gray-200 p-6 bg-white">
+          <h3 class="font-semibold">AI Knowledge Assist</h3>
+          <p class="mt-2 text-sm text-gray-600">Surfaced auto‑recommended articles in Service; first‑contact resolution up 21%.</p>
+        </article>
+        <article class="rounded-3xl border border-gray-200 p-6 bg-white">
+          <h3 class="font-semibold">Payroll & Time Billing</h3>
+          <p class="mt-2 text-sm text-gray-600">Integrated Jibble hours → invoices; shaved 6 hours/wk in finance ops.</p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- Process -->
+  <section id="process" class="py-20">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <h2 class="text-3xl font-bold">How we deliver</h2>
+      <ol class="mt-8 grid md:grid-cols-2 lg:grid-cols-4 gap-6 text-sm">
+        <li class="rounded-3xl border border-gray-200 p-6">
+          <p class="font-semibold">1) Discover</p>
+          <p class="mt-1 text-gray-600">Map goals, users, data, and KPIs. Align scope with time‑boxed milestones.</p>
+        </li>
+        <li class="rounded-3xl border border-gray-200 p-6">
+          <p class="font-semibold">2) Design</p>
+          <p class="mt-1 text-gray-600">Solution blueprint, security model, and integration contracts.</p>
+        </li>
+        <li class="rounded-3xl border border-gray-200 p-6">
+          <p class="font-semibold">3) Build</p>
+          <p class="mt-1 text-gray-600">Config + code with CI checks, test data, and demo‑ready sprints.</p>
+        </li>
+        <li class="rounded-3xl border border-gray-200 p-6">
+          <p class="font-semibold">4) Launch</p>
+          <p class="mt-1 text-gray-600">UAT, training, and runbooks; post‑go‑live support and analytics.</p>
+        </li>
+      </ol>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="py-20 bg-gray-50">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      <div class="grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <h2 class="text-3xl font-bold">About CadLabs</h2>
+          <p class="mt-3 text-gray-600">We’re builders who sweat details. From Apex triggers to AI prompts and evals, our job is to reduce risk and deliver value fast. Based in India, serving clients globally.</p>
+          <dl class="mt-6 grid grid-cols-2 gap-6 text-sm">
+            <div>
+              <dt class="text-gray-500">Founded</dt>
+              <dd class="font-semibold">2025</dd>
+            </div>
+            <div>
+              <dt class="text-gray-500">Focus</dt>
+              <dd class="font-semibold">Salesforce • AI • Integrations</dd>
+            </div>
+          </dl>
+        </div>
+        <div class="rounded-3xl border border-gray-200 p-6 bg-white">
+          <ul class="space-y-3 text-sm">
+            <li>• Salesforce customization (Apex, Flows, LWC)</li>
+            <li>• Data Cloud + analytics dashboards</li>
+            <li>• REST APIs, Platform Events, middleware</li>
+            <li>• AI agents & knowledge recommendations</li>
+            <li>• QA automation, monitors, and alerts</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="py-20">
+    <div class="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+      <h2 class="text-3xl font-bold">Tell us about your project</h2>
+      <p class="mt-3 text-gray-600">2–3 lines is enough. We’ll reply within a business day.</p>
+      <form onsubmit="submitForm(event)" class="mt-8 grid gap-4 text-left">
+        <input id="name" required placeholder="Your name" class="w-full rounded-2xl border border-gray-300 p-3" />
+        <input id="email" required type="email" placeholder="Work email" class="w-full rounded-2xl border border-gray-300 p-3" />
+        <textarea id="message" required placeholder="What do you need help with?" rows="4" class="w-full rounded-2xl border border-gray-300 p-3"></textarea>
+        <button class="rounded-2xl bg-black text-white px-5 py-3 font-medium hover:opacity-90">Send</button>
+        <p id="thanks" class="hidden text-sm text-green-700">Thanks! Your email client should have opened. If not, email us at <span class="font-mono">hello@cadlabs.co</span>.</p>
+      </form>
+      <p class="mt-6 text-xs text-gray-500">No spam. We only use your email to respond to your inquiry.</p>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="py-10 border-t border-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-sm text-gray-600 flex flex-col sm:flex-row gap-4 sm:items-center justify-between">
+      <p>© <span id="year"></span> CadLabs. All rights reserved.</p>
+      <div class="flex gap-4">
+        <a href="#" class="hover:text-black">Privacy</a>
+        <a href="#" class="hover:text-black">Terms</a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+    document.getElementById('menuBtn').addEventListener('click', () => {
+      document.getElementById('mobileMenu').classList.toggle('hidden');
+    });
+    function submitForm(e) {
+      e.preventDefault();
+      const name = document.getElementById('name').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+      const body = encodeURIComponent(`Hi CadLabs,%0D%0A%0D%0A${message}%0D%0A%0D%0A— ${name} (${email})`);
+      window.location.href = `mailto:hello@cadlabs.co?subject=Project inquiry&body=${body}`;
+      document.getElementById('thanks').classList.remove('hidden');
+    }
+  </script>
+</body>
+</html>
